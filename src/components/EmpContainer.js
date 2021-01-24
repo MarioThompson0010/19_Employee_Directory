@@ -3,6 +3,7 @@ import API from "../utils/API";
 import EmpName from "./EmpName";
 import NameFilter from "./NameFilter";
 
+// this class is sort of the mother class. It controls the other components.
 class EmpContainer extends Component {
     state = {
         originalResult: [],
@@ -21,6 +22,7 @@ class EmpContainer extends Component {
         this.searchEmployees();
     }
 
+    // sort empoloyees
     sortEmp = (event) => {
 
         if (!this.state.sortAscend) {
@@ -38,6 +40,7 @@ class EmpContainer extends Component {
         this.setState({ result: this.state.result });
     }
 
+    // filter employees
     filterEmp = (name) => {
         const emps = this.state.originalResult.filter(emp => {
             let nameEmp = emp.name.first + " " + emp.name.last;
@@ -51,6 +54,7 @@ class EmpContainer extends Component {
         return emps;
     };
 
+    // grab employees from website and populate the list
     searchEmployees = () => {
         API.search()
             .then(res => this.setState({
