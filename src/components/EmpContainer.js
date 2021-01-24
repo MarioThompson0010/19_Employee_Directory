@@ -8,7 +8,6 @@ class EmpContainer extends Component {
     state = {
         originalResult: [],
         result: [],
-        search: "",
         sortAscend: false
     };
 
@@ -74,9 +73,7 @@ class EmpContainer extends Component {
                 <div className="row">
                     <NameFilter
 
-                        handleInputChange={this.handleInputChange}
-                        searcher={this.state.search}
-                        resulter={this.state.result}
+                        handleInputChange={this.handleInputChange} // onChange, or key press
                     >
                     </NameFilter>
                 </div>
@@ -88,7 +85,7 @@ class EmpContainer extends Component {
                         <button onClick={this.sortEmp} className="btn btn-success">Age (click to sort)</button>
                     </div>
                 </div>
-
+               {/* populate the name and age columns */}
                 <EmpName
                     theName={this.state.result}>
                 </EmpName>
