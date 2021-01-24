@@ -1,7 +1,7 @@
 # 19 Employee Directory
 
 ## Link to trying out the app and Screenshots:
-[Try out the Workout Tracker](https://rocky-temple-45102.herokuapp.com/)
+[Try out the Employee Directory](https://mariothompson0010.github.io/19_Employee_Directory/)
 
 ![Screenshot 1](https://github.com/MarioThompson0010/19_Employee_Directory/blob/master/assets/NameFilter.PNG)
 ![Screenshot 2](https://github.com/MarioThompson0010/19_Employee_Directory/blob/master/assets/Screenshot1.PNG)
